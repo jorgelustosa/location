@@ -1,2 +1,0 @@
-# Laravel crontab schedule (default)
-* * * * * su -s /bin/sh -p -c "cd /var/www/html; php artisan schedule:run" nginx
