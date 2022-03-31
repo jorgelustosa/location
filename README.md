@@ -2,6 +2,7 @@
 
 ```
 # cd docker 
+# docker-compose up --build
 # docker-compose up -d 
 # php artisan migrate:install 
 # php artisan migrate
