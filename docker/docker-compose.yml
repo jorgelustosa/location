@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  locationmysql:
+    container_name: mysql
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: local_db
+    volumes:
+      - location_db_data:/var/lib/mysql
+    networks:
+      - laravel
+  locationphp:
+    container_name: php
+    tty: true
+    build:
+      context: ./php
+    command: bash -c "mkdir -p /var/www/html/var/cache/ && mkdir -p /var/www/html/var/log/ && composer install --no-interaction && chmod 777 -R /var/www/html/var/cache/ && chmod 777 -R /var/www/html/var/log/ && php-fpm"
+    volumes:
+      - ..:/var/www/html
+    depends_on:
+      - locationmysql
+    ports:
+      - "9000:9000"
+    networks:
+      - laravel
+    env_file:
+      - .env
+  locationnginx:
+    container_name: nginx
+    build:
+      context: ./nginx
+    volumes:
+      - ..:/var/www/html
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - locationphp
+    ports:
+      - "8080:80"
+    networks:
+      - laravel
+volumes:
+  location_db_data:
+networks:
+  laravel:

@@ -1,0 +1,43 @@
+path:
+  home: /opt/filebeat
+  config: /etc/filebeat
+  data: ${path.home}
+  logs: ${path.home}/logs/
+
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/www/html/storage/logs/messagesbus/*/*/*/*.log
+      - /var/www/html/storage/logs/laravel-*.log
+      - /var/www/html/storage/logs/laravel.log
+      - /var/www/html/storage/logs/lumen-*.log
+      - /var/www/html/storage/logs/lumen.log
+    multiline.type: pattern
+    multiline.pattern: '^\['
+    multiline.negate: true
+    multiline.match: after
+    fields:
+      type_log: postalcode-service
+
+output.elasticsearch:
+  hosts: ["${ELASTICSEARCH_HOST}:${ELASTICSEARCH_PORT}"]
+  index: "filebeat-postalcode-service-%{+yyyy.MM}"
+  protocol: "https"
+
+setup.template:
+  name: "filebeat-postalcode-service"
+  pattern: "filebeat-postalcode-service-*"
+  enabled: true
+
+filebeat.config.modules:
+  enabled: true
+  path: ${path.home}/modules.d/*.yml
+
+xpack.security.enabled: false
+xpack.graph.enabled: false
+xpack.ml.enabled: false
+xpack.monitoring.enabled: false
+xpack.reporting.enabled: false
+xpack.watcher.enabled: false
+setup.ilm.enabled: false
