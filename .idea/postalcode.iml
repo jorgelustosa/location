@@ -130,6 +130,11 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/pipeline" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/database" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/illuminate/encryption" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/swagger-api/swagger-ui" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zircote/swagger-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/darkaonline/swagger-lume" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

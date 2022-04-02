@@ -16,6 +16,4 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-
-
 $router->post('/location/postcode', 'PostcodeController@search');

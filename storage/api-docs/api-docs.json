@@ -1,0 +1,55 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Location Api",
+        "description": "API returns location data such as country, place name , latitude, longitude,addresses in JSON  formats.",
+        "contact": {
+            "name": "Jorge Lustosa",
+            "email": "jorgelustosa@gmail.com"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/location/postcode": {
+            "post": {
+                "tags": [
+                    "postcode"
+                ],
+                "operationId": "/location/postcode",
+                "parameters": [
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "ISO 2 Code of countrys in World, like NL,BR,US,PT",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "code",
+                        "in": "query",
+                        "description": "Location postcode of a desired area information",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns array with address information about de postcode",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Error: Bad request. When required parameters were not supplied."
+                    }
+                }
+            }
+        }
+    }
+}

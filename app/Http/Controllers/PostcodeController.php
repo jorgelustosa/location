@@ -25,6 +25,38 @@ class PostcodeController extends Controller
         $this->logger = $logger ;
         $this->requireSearch =  new RequireSearch($this->logger) ;
     }
+
+    /**
+     * @OA\Post(
+     *     path="/location/postcode",
+     *     operationId="/location/postcode",
+     *     tags={"postcode"},
+     *     @OA\Parameter(
+     *         name="country",
+     *         in="query",
+     *         description="ISO 2 Code of countrys in World, like NL,BR,US,PT",
+     *         required=true,
+     *         @OA\Schema(type="string")
+     *     ),
+     *     @OA\Parameter(
+     *         name="code",
+     *         in="query",
+     *         description="Location postcode of a desired area information",
+     *         required=true,
+     *         @OA\Schema(type="string")
+     *     ),
+     *     @OA\Response(
+     *         response="200",
+     *         description="Returns array with address information about de postcode",
+     *         @OA\JsonContent()
+     *     ),
+     *     @OA\Response(
+     *         response="400",
+     *         description="Error: Bad request. When required parameters were not supplied.",
+     *     ),
+     * )
+     */
+
     public function search(Request $request) :object
     {
         Log::info('Received postcode search', ['payload' => $request->all()]);
