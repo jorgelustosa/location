@@ -42,7 +42,7 @@ To access the documentation page, when your container working, just access http:
 
 ![alt text](https://github.com/jorgelustosa/location/blob/main/public/img/doc.png?raw=true)
 
-----
+
 > ### ⚠️ Tips
 > * When you start your container for the first time, you have to 
     > wait a composer finish the package installation, before use and run commands 
