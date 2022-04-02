@@ -4,6 +4,7 @@ namespace Core\Tests\Domain\Entities;
 
 use Core\Domain\Entities\PostcodeRequestFactory;
 use Core\Tests\DataProviders\PayloadDataProvider;
+use JetBrains\PhpStorm\Pure;
 use Tests\TestCase;
 
 class PostcodeRequestTest extends TestCase
@@ -16,7 +17,6 @@ class PostcodeRequestTest extends TestCase
         $this->assertSame(array_diff($expected, $actual), array_diff($actual, $expected));
         $this->assertEquals($expected['country'], $postcodeRequest->getCountry());
     }
-
     /**
      * @dataProvider payloadDataFieldNullProvider
      */
@@ -26,8 +26,7 @@ class PostcodeRequestTest extends TestCase
         $this->expectExceptionMessage($errorMessage);
         PostcodeRequestFactory::factory($payload);
     }
-
-    public function payloadDataFieldNullProvider(): array
+    #[Pure] public function payloadDataFieldNullProvider(): array
     {
 
         $data = [];

@@ -19,7 +19,6 @@ class CreatePostcodeRequestTest extends TestCase
         );
         $this->assertInstanceOf(CreatePostcodeRequest::class, $create);
     }
-
     public function testCreateRequest()
     {
         $create = new CreatePostcodeRequest(
