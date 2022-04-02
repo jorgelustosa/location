@@ -4,7 +4,7 @@ namespace Core\Tests\Domain\Entities;
 
 use Core\Domain\Entities\PostcodeRequestFactory;
 use Core\Tests\DataProviders\PayloadDataProvider;
-use PHPUnit\Framework\TestCase;
+use Tests\TestCase;
 
 class PostcodeRequestTest extends TestCase
 {

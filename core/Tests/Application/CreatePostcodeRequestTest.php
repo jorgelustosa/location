@@ -6,14 +6,14 @@ use Core\Application\CreatePostcodeRequest;
 use Core\Infrastructure\PostcodeRequestRepositoryFake;
 use Core\Infrastructure\LoggerServiceFake;
 use Core\Tests\DataProviders\PayloadDataProvider;
-use PHPUnit\Framework\TestCase;
+use Tests\TestCase;
 
 class CreatePostcodeRequestTest extends TestCase
 {
 
     public function testInitiateClass()
     {
-        $create = new CreatePostcodeRequestTest(
+       $create = new CreatePostcodeRequest(
             new PostcodeRequestRepositoryFake(),
             new LoggerServiceFake()
         );
