@@ -14,7 +14,7 @@ attached directly to DataAnalytics tools like Microsoft PowerBI and Tableau or G
 
 Instructions 
 ----
-First you have to put your docker container to work properly, run the follow instructions as described: 
+First you have to put your docker container to work properly. Run the follow instructions like described: 
 
 **Start and Build an image of the container:**
 ```
@@ -22,7 +22,7 @@ First you have to put your docker container to work properly, run the follow ins
 # docker-compose up --build
 ```
 
-With you container working properly, run the follow commands 
+With you container working properly, run the follow commands inside the **locationphp** container. 
 
 ```
 # php artisan migrate:install 
@@ -38,19 +38,19 @@ With you container working properly, run the follow commands
 
 ### Documentation
 
-To access the documentation page, when your container working, just access http://localhost:8080/api/documentation
+To access the documentation page, when your container is working, just follow the link http://localhost:8080/api/documentation
 
 ![alt text](https://github.com/jorgelustosa/location/blob/main/public/img/doc.png?raw=true)
 
 
 > ### ⚠️ Tips
 > * When you start your container for the first time, you have to 
-    > wait a composer finish the package installation, before use and run commands 
-    > in your container. When the initialization is complete you will see the follow 
-    > message: <br><br>
+> wait a composer finish the package installation, before use and run commands 
+> in your container. When the initialization is complete you will see the follow 
+> message: <br><br>
 >NOTICE: fpm is running, pid 1  <br> NOTICE: ready to handle connections
 > <br><br>
-> After that you can easily run the commands to seed the database or use the application 
+> After that, you can easily run the commands to seed the database or use the application 
 
 ### Usefull Commands 
 
