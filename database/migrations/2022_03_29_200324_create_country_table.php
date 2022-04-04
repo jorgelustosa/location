@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('postcode_country', function (Blueprint $table) {
+        Schema::create('country', function (Blueprint $table) {
             $table->id();
             $table->string('iso',2)->nullable(false);
             $table->string('iso3',3)->nullable(true);
@@ -44,6 +44,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('postcode_country');
+        Schema::dropIfExists('country');
     }
 };

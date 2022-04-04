@@ -7,17 +7,23 @@ use DomainException;
 use JetBrains\PhpStorm\ArrayShape;
 use JetBrains\PhpStorm\Pure;
 
-class PostcodeRequest
+class CountryRequest
 {
-    private string $code;
     private string $country;
+    private string $continent;
+    private string $geonameid;
+
 
     public function __construct(
         string $country,
-        string $code
+        string $continent,
+        string $geonameid,
+
     ) {
-        $this->setCode($code);
         $this->setCountry($country);
+        $this->setContinent($continent);
+        $this->setGeonameid($geonameid);
+
     }
     private function setCode($code): void
     {

@@ -8,7 +8,11 @@
 
 Info
 ----
-The main purpose of this api are provides information about localization to use in 
+Sometime your transactional logistics or geo applications need consume coordinates, geocodes, address, countries 
+or all other kind of geo information to use in workloads or business intelligence panels without 
+of necessity an external api  with flexible methods to retrieve full dataset of information or internal codifications from your own domain. 
+Furthermore, many high availability projects need to have important services or api's inside your own infrastructure to minimize risk of unavailable service.   
+The main purpose is, create a reliable and flexible api to provides localization information to use in 
 futures geocoding capabilities of any software. Some operations from this API can be 
 attached directly to DataAnalytics tools like Microsoft PowerBI and Tableau or Google DataStudio.   
 
@@ -47,7 +51,7 @@ To access the documentation page, when your container is working, just follow th
 > * When you start your container for the first time, you have to 
 > wait a composer finish the package installation, before use and run commands 
 > in your container. When the initialization is complete you will see the follow 
-> message: <br><br>
+> message in supervisor logs or docker-composer verbose return: <br><br>
 >NOTICE: fpm is running, pid 1  <br> NOTICE: ready to handle connections
 > <br><br>
 > After that, you can easily run the commands to seed the database or use the application 
@@ -60,5 +64,5 @@ To access the documentation page, when your container is working, just follow th
 ```
 **Shell access for you docker container:**
 ```
-# docker-compose exec app sh
+# docker-compose exec locationphp sh
 ```

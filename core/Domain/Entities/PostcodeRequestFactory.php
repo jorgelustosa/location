@@ -12,7 +12,6 @@ class PostcodeRequestFactory
             $payloadObj->code,
         );
     }
-
     private static function transformToObject(array $data)
     {
         return json_decode(json_encode($data));

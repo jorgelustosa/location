@@ -3,8 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB ;
 
-class PostcodeCountryTableSeeder extends Seeder
+class CountryTableSeeder extends Seeder
 {
 
     /**
@@ -14,12 +15,12 @@ class PostcodeCountryTableSeeder extends Seeder
      */
     public function run()
     {
-        
 
-        \DB::table('postcode_country')->delete();
-        
-        \DB::table('postcode_country')->insert(array (
-            0 => 
+
+        DB::table('country')->delete();
+
+        DB::table('country')->insert(array (
+            0 =>
             array (
                 'id' => 1,
                 'iso' => 'AD',
@@ -36,14 +37,14 @@ class PostcodeCountryTableSeeder extends Seeder
                 'currency_name' => 'Euro',
                 'phone' => '376',
                 'postalcode_format' => 'AD###',
-            'postalcode_regex' => '^(?:AD)*(d{3})$',
+                'postalcode_regex' => '^(?:AD)*(d{3})$',
                 'languages' => 'ca',
                 'geonameid' => '3041565',
                 'neighbours' => 'ES,FR',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'iso' => 'AE',
@@ -67,7 +68,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'iso' => 'AF',
@@ -91,7 +92,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'iso' => 'GE',
@@ -115,7 +116,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'iso' => 'GF',
@@ -139,7 +140,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'iso' => 'GH',
@@ -163,7 +164,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
                 'iso' => 'GI',
@@ -187,7 +188,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 8,
                 'iso' => 'GL',
@@ -211,7 +212,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 9,
                 'iso' => 'GM',
@@ -235,7 +236,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 10,
                 'iso' => 'GN',
@@ -259,7 +260,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 11,
                 'iso' => 'GP',
@@ -283,7 +284,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 12,
                 'iso' => 'GQ',
@@ -307,7 +308,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 13,
                 'iso' => 'GR',
@@ -331,7 +332,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 14,
                 'iso' => 'GS',
@@ -355,7 +356,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 15,
                 'iso' => 'GT',
@@ -372,14 +373,14 @@ class PostcodeCountryTableSeeder extends Seeder
                 'currency_name' => 'Quetzal',
                 'phone' => '502',
                 'postalcode_format' => '#####',
-            'postalcode_regex' => '^(d{5})$',
+                'postalcode_regex' => '^(d{5})$',
                 'languages' => 'es-GT',
                 'geonameid' => '3595528',
                 'neighbours' => 'MX,HN,BZ,SV',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 16,
                 'iso' => 'GU',
@@ -403,7 +404,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 17,
                 'iso' => 'GW',
@@ -427,7 +428,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            17 => 
+            17 =>
             array (
                 'id' => 18,
                 'iso' => 'GY',
@@ -451,7 +452,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            18 => 
+            18 =>
             array (
                 'id' => 19,
                 'iso' => 'HK',
@@ -475,7 +476,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            19 => 
+            19 =>
             array (
                 'id' => 20,
                 'iso' => 'HM',
@@ -499,7 +500,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            20 => 
+            20 =>
             array (
                 'id' => 21,
                 'iso' => 'HN',
@@ -516,14 +517,14 @@ class PostcodeCountryTableSeeder extends Seeder
                 'currency_name' => 'Lempira',
                 'phone' => '504',
                 'postalcode_format' => '@@####',
-            'postalcode_regex' => '^([A-Z]{2}d{4})$',
+                'postalcode_regex' => '^([A-Z]{2}d{4})$',
                 'languages' => 'es-HN,cab,miq',
                 'geonameid' => '3608932',
                 'neighbours' => 'GT,NI,SV',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            21 => 
+            21 =>
             array (
                 'id' => 22,
                 'iso' => 'HR',
@@ -540,14 +541,14 @@ class PostcodeCountryTableSeeder extends Seeder
                 'currency_name' => 'Kuna',
                 'phone' => '385',
                 'postalcode_format' => '#####',
-            'postalcode_regex' => '^(?:HR)*(d{5})$',
+                'postalcode_regex' => '^(?:HR)*(d{5})$',
                 'languages' => 'hr-HR,sr',
                 'geonameid' => '3202326',
                 'neighbours' => 'HU,SI,BA,ME,RS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            22 => 
+            22 =>
             array (
                 'id' => 23,
                 'iso' => 'HT',
@@ -564,14 +565,14 @@ class PostcodeCountryTableSeeder extends Seeder
                 'currency_name' => 'Gourde',
                 'phone' => '509',
                 'postalcode_format' => 'HT####',
-            'postalcode_regex' => '^(?:HT)*(d{4})$',
+                'postalcode_regex' => '^(?:HT)*(d{4})$',
                 'languages' => 'ht,fr-HT',
                 'geonameid' => '3723988',
                 'neighbours' => 'DO',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            23 => 
+            23 =>
             array (
                 'id' => 24,
                 'iso' => 'HU',
@@ -588,14 +589,14 @@ class PostcodeCountryTableSeeder extends Seeder
                 'currency_name' => 'Forint',
                 'phone' => '36',
                 'postalcode_format' => '####',
-            'postalcode_regex' => '^(d{4})$',
+                'postalcode_regex' => '^(d{4})$',
                 'languages' => 'hu-HU',
                 'geonameid' => '719819',
                 'neighbours' => 'SK,SI,RO,UA,HR,AT,RS',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            24 => 
+            24 =>
             array (
                 'id' => 25,
                 'iso' => 'ID',
@@ -619,7 +620,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            25 => 
+            25 =>
             array (
                 'id' => 26,
                 'iso' => 'IE',
@@ -636,14 +637,14 @@ class PostcodeCountryTableSeeder extends Seeder
                 'currency_name' => 'Euro',
                 'phone' => '353',
                 'postalcode_format' => '@@@ @@@@',
-            'postalcode_regex' => '^(D6W|[AC-FHKNPRTV-Y][0-9]{2})s?([AC-FHKNPRTV-Y0-9]{4})',
+                'postalcode_regex' => '^(D6W|[AC-FHKNPRTV-Y][0-9]{2})s?([AC-FHKNPRTV-Y0-9]{4})',
                 'languages' => 'en-IE,ga-IE',
                 'geonameid' => '2963597',
                 'neighbours' => 'GB',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            26 => 
+            26 =>
             array (
                 'id' => 27,
                 'iso' => 'IL',
@@ -667,7 +668,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            27 => 
+            27 =>
             array (
                 'id' => 28,
                 'iso' => 'IN',
@@ -691,7 +692,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            28 => 
+            28 =>
             array (
                 'id' => 29,
                 'iso' => 'IO',
@@ -715,7 +716,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            29 => 
+            29 =>
             array (
                 'id' => 30,
                 'iso' => 'IQ',
@@ -739,7 +740,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            30 => 
+            30 =>
             array (
                 'id' => 31,
                 'iso' => 'IR',
@@ -763,7 +764,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            31 => 
+            31 =>
             array (
                 'id' => 32,
                 'iso' => 'IS',
@@ -787,7 +788,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            32 => 
+            32 =>
             array (
                 'id' => 33,
                 'iso' => 'IT',
@@ -811,7 +812,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            33 => 
+            33 =>
             array (
                 'id' => 34,
                 'iso' => 'JM',
@@ -835,7 +836,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            34 => 
+            34 =>
             array (
                 'id' => 35,
                 'iso' => 'JO',
@@ -859,7 +860,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            35 => 
+            35 =>
             array (
                 'id' => 36,
                 'iso' => 'JP',
@@ -883,7 +884,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            36 => 
+            36 =>
             array (
                 'id' => 37,
                 'iso' => 'KE',
@@ -907,7 +908,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            37 => 
+            37 =>
             array (
                 'id' => 38,
                 'iso' => 'KG',
@@ -931,7 +932,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            38 => 
+            38 =>
             array (
                 'id' => 39,
                 'iso' => 'KH',
@@ -955,7 +956,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            39 => 
+            39 =>
             array (
                 'id' => 40,
                 'iso' => 'KI',
@@ -979,7 +980,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            40 => 
+            40 =>
             array (
                 'id' => 41,
                 'iso' => 'KM',
@@ -1003,7 +1004,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            41 => 
+            41 =>
             array (
                 'id' => 42,
                 'iso' => 'KN',
@@ -1027,7 +1028,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            42 => 
+            42 =>
             array (
                 'id' => 43,
                 'iso' => 'KP',
@@ -1051,7 +1052,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            43 => 
+            43 =>
             array (
                 'id' => 44,
                 'iso' => 'KR',
@@ -1075,7 +1076,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            44 => 
+            44 =>
             array (
                 'id' => 45,
                 'iso' => 'XK',
@@ -1099,7 +1100,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            45 => 
+            45 =>
             array (
                 'id' => 46,
                 'iso' => 'KW',
@@ -1123,7 +1124,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            46 => 
+            46 =>
             array (
                 'id' => 47,
                 'iso' => 'KY',
@@ -1147,7 +1148,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            47 => 
+            47 =>
             array (
                 'id' => 48,
                 'iso' => 'KZ',
@@ -1171,7 +1172,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            48 => 
+            48 =>
             array (
                 'id' => 49,
                 'iso' => 'LA',
@@ -1195,7 +1196,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            49 => 
+            49 =>
             array (
                 'id' => 50,
                 'iso' => 'LB',
@@ -1219,7 +1220,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            50 => 
+            50 =>
             array (
                 'id' => 51,
                 'iso' => 'LC',
@@ -1243,7 +1244,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            51 => 
+            51 =>
             array (
                 'id' => 52,
                 'iso' => 'LI',
@@ -1267,7 +1268,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            52 => 
+            52 =>
             array (
                 'id' => 53,
                 'iso' => 'LK',
@@ -1291,7 +1292,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            53 => 
+            53 =>
             array (
                 'id' => 54,
                 'iso' => 'LR',
@@ -1315,7 +1316,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            54 => 
+            54 =>
             array (
                 'id' => 55,
                 'iso' => 'LS',
@@ -1339,7 +1340,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            55 => 
+            55 =>
             array (
                 'id' => 56,
                 'iso' => 'LT',
@@ -1363,7 +1364,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            56 => 
+            56 =>
             array (
                 'id' => 57,
                 'iso' => 'LU',
@@ -1387,7 +1388,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            57 => 
+            57 =>
             array (
                 'id' => 58,
                 'iso' => 'LV',
@@ -1411,7 +1412,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            58 => 
+            58 =>
             array (
                 'id' => 59,
                 'iso' => 'LY',
@@ -1435,7 +1436,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            59 => 
+            59 =>
             array (
                 'id' => 60,
                 'iso' => 'MA',
@@ -1459,7 +1460,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            60 => 
+            60 =>
             array (
                 'id' => 61,
                 'iso' => 'MC',
@@ -1483,7 +1484,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            61 => 
+            61 =>
             array (
                 'id' => 62,
                 'iso' => 'MD',
@@ -1507,7 +1508,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            62 => 
+            62 =>
             array (
                 'id' => 63,
                 'iso' => 'ME',
@@ -1531,7 +1532,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            63 => 
+            63 =>
             array (
                 'id' => 64,
                 'iso' => 'MF',
@@ -1555,7 +1556,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            64 => 
+            64 =>
             array (
                 'id' => 65,
                 'iso' => 'MG',
@@ -1579,7 +1580,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            65 => 
+            65 =>
             array (
                 'id' => 66,
                 'iso' => 'MH',
@@ -1603,7 +1604,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            66 => 
+            66 =>
             array (
                 'id' => 67,
                 'iso' => 'MK',
@@ -1627,7 +1628,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            67 => 
+            67 =>
             array (
                 'id' => 68,
                 'iso' => 'ML',
@@ -1651,7 +1652,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            68 => 
+            68 =>
             array (
                 'id' => 69,
                 'iso' => 'MM',
@@ -1675,7 +1676,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            69 => 
+            69 =>
             array (
                 'id' => 70,
                 'iso' => 'MN',
@@ -1699,7 +1700,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            70 => 
+            70 =>
             array (
                 'id' => 71,
                 'iso' => 'MO',
@@ -1723,7 +1724,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            71 => 
+            71 =>
             array (
                 'id' => 72,
                 'iso' => 'MP',
@@ -1747,7 +1748,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            72 => 
+            72 =>
             array (
                 'id' => 73,
                 'iso' => 'MQ',
@@ -1771,7 +1772,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            73 => 
+            73 =>
             array (
                 'id' => 74,
                 'iso' => 'MR',
@@ -1795,7 +1796,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            74 => 
+            74 =>
             array (
                 'id' => 75,
                 'iso' => 'MS',
@@ -1819,7 +1820,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            75 => 
+            75 =>
             array (
                 'id' => 76,
                 'iso' => 'MT',
@@ -1843,7 +1844,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            76 => 
+            76 =>
             array (
                 'id' => 77,
                 'iso' => 'MU',
@@ -1867,7 +1868,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            77 => 
+            77 =>
             array (
                 'id' => 78,
                 'iso' => 'MV',
@@ -1891,7 +1892,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            78 => 
+            78 =>
             array (
                 'id' => 79,
                 'iso' => 'MW',
@@ -1915,7 +1916,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            79 => 
+            79 =>
             array (
                 'id' => 80,
                 'iso' => 'MX',
@@ -1939,7 +1940,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            80 => 
+            80 =>
             array (
                 'id' => 81,
                 'iso' => 'MY',
@@ -1963,7 +1964,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            81 => 
+            81 =>
             array (
                 'id' => 82,
                 'iso' => 'MZ',
@@ -1987,7 +1988,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            82 => 
+            82 =>
             array (
                 'id' => 83,
                 'iso' => 'NA',
@@ -2011,7 +2012,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            83 => 
+            83 =>
             array (
                 'id' => 84,
                 'iso' => 'NC',
@@ -2035,7 +2036,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            84 => 
+            84 =>
             array (
                 'id' => 85,
                 'iso' => 'NE',
@@ -2059,7 +2060,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            85 => 
+            85 =>
             array (
                 'id' => 86,
                 'iso' => 'NF',
@@ -2083,7 +2084,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            86 => 
+            86 =>
             array (
                 'id' => 87,
                 'iso' => 'NG',
@@ -2107,7 +2108,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            87 => 
+            87 =>
             array (
                 'id' => 88,
                 'iso' => 'NI',
@@ -2131,7 +2132,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            88 => 
+            88 =>
             array (
                 'id' => 89,
                 'iso' => 'NL',
@@ -2155,7 +2156,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            89 => 
+            89 =>
             array (
                 'id' => 90,
                 'iso' => 'NO',
@@ -2179,7 +2180,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            90 => 
+            90 =>
             array (
                 'id' => 91,
                 'iso' => 'NP',
@@ -2203,7 +2204,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            91 => 
+            91 =>
             array (
                 'id' => 92,
                 'iso' => 'NR',
@@ -2227,7 +2228,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            92 => 
+            92 =>
             array (
                 'id' => 93,
                 'iso' => 'NU',
@@ -2251,7 +2252,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            93 => 
+            93 =>
             array (
                 'id' => 94,
                 'iso' => 'NZ',
@@ -2275,7 +2276,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            94 => 
+            94 =>
             array (
                 'id' => 95,
                 'iso' => 'OM',
@@ -2299,7 +2300,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            95 => 
+            95 =>
             array (
                 'id' => 96,
                 'iso' => 'PA',
@@ -2323,7 +2324,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            96 => 
+            96 =>
             array (
                 'id' => 97,
                 'iso' => 'PE',
@@ -2347,7 +2348,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            97 => 
+            97 =>
             array (
                 'id' => 98,
                 'iso' => 'PF',
@@ -2371,7 +2372,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            98 => 
+            98 =>
             array (
                 'id' => 99,
                 'iso' => 'PG',
@@ -2395,7 +2396,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            99 => 
+            99 =>
             array (
                 'id' => 100,
                 'iso' => 'PH',
@@ -2419,7 +2420,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            100 => 
+            100 =>
             array (
                 'id' => 101,
                 'iso' => 'PK',
@@ -2443,7 +2444,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            101 => 
+            101 =>
             array (
                 'id' => 102,
                 'iso' => 'PL',
@@ -2467,7 +2468,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            102 => 
+            102 =>
             array (
                 'id' => 103,
                 'iso' => 'PM',
@@ -2491,7 +2492,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            103 => 
+            103 =>
             array (
                 'id' => 104,
                 'iso' => 'PN',
@@ -2515,7 +2516,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            104 => 
+            104 =>
             array (
                 'id' => 105,
                 'iso' => 'PR',
@@ -2539,7 +2540,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            105 => 
+            105 =>
             array (
                 'id' => 106,
                 'iso' => 'PS',
@@ -2563,7 +2564,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            106 => 
+            106 =>
             array (
                 'id' => 107,
                 'iso' => 'PT',
@@ -2587,7 +2588,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            107 => 
+            107 =>
             array (
                 'id' => 108,
                 'iso' => 'PW',
@@ -2611,7 +2612,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            108 => 
+            108 =>
             array (
                 'id' => 109,
                 'iso' => 'PY',
@@ -2635,7 +2636,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            109 => 
+            109 =>
             array (
                 'id' => 110,
                 'iso' => 'QA',
@@ -2659,7 +2660,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            110 => 
+            110 =>
             array (
                 'id' => 111,
                 'iso' => 'RE',
@@ -2683,7 +2684,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            111 => 
+            111 =>
             array (
                 'id' => 112,
                 'iso' => 'RO',
@@ -2707,7 +2708,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            112 => 
+            112 =>
             array (
                 'id' => 113,
                 'iso' => 'RS',
@@ -2731,7 +2732,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            113 => 
+            113 =>
             array (
                 'id' => 114,
                 'iso' => 'RU',
@@ -2755,7 +2756,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            114 => 
+            114 =>
             array (
                 'id' => 115,
                 'iso' => 'RW',
@@ -2779,7 +2780,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            115 => 
+            115 =>
             array (
                 'id' => 116,
                 'iso' => 'SA',
@@ -2803,7 +2804,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            116 => 
+            116 =>
             array (
                 'id' => 117,
                 'iso' => 'SB',
@@ -2827,7 +2828,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            117 => 
+            117 =>
             array (
                 'id' => 118,
                 'iso' => 'SC',
@@ -2851,7 +2852,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            118 => 
+            118 =>
             array (
                 'id' => 119,
                 'iso' => 'SD',
@@ -2875,7 +2876,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            119 => 
+            119 =>
             array (
                 'id' => 120,
                 'iso' => 'SS',
@@ -2899,7 +2900,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            120 => 
+            120 =>
             array (
                 'id' => 121,
                 'iso' => 'SE',
@@ -2923,7 +2924,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            121 => 
+            121 =>
             array (
                 'id' => 122,
                 'iso' => 'SG',
@@ -2947,7 +2948,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            122 => 
+            122 =>
             array (
                 'id' => 123,
                 'iso' => 'SH',
@@ -2971,7 +2972,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            123 => 
+            123 =>
             array (
                 'id' => 124,
                 'iso' => 'SI',
@@ -2995,7 +2996,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            124 => 
+            124 =>
             array (
                 'id' => 125,
                 'iso' => 'SJ',
@@ -3019,7 +3020,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            125 => 
+            125 =>
             array (
                 'id' => 126,
                 'iso' => 'SK',
@@ -3043,7 +3044,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            126 => 
+            126 =>
             array (
                 'id' => 127,
                 'iso' => 'SL',
@@ -3067,7 +3068,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            127 => 
+            127 =>
             array (
                 'id' => 128,
                 'iso' => 'SM',
@@ -3091,7 +3092,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            128 => 
+            128 =>
             array (
                 'id' => 129,
                 'iso' => 'SN',
@@ -3115,7 +3116,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            129 => 
+            129 =>
             array (
                 'id' => 130,
                 'iso' => 'SO',
@@ -3139,7 +3140,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            130 => 
+            130 =>
             array (
                 'id' => 131,
                 'iso' => 'SR',
@@ -3163,7 +3164,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            131 => 
+            131 =>
             array (
                 'id' => 132,
                 'iso' => 'ST',
@@ -3187,7 +3188,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            132 => 
+            132 =>
             array (
                 'id' => 133,
                 'iso' => 'SV',
@@ -3211,7 +3212,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            133 => 
+            133 =>
             array (
                 'id' => 134,
                 'iso' => 'SX',
@@ -3235,7 +3236,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            134 => 
+            134 =>
             array (
                 'id' => 135,
                 'iso' => 'SY',
@@ -3259,7 +3260,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            135 => 
+            135 =>
             array (
                 'id' => 136,
                 'iso' => 'SZ',
@@ -3283,7 +3284,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            136 => 
+            136 =>
             array (
                 'id' => 137,
                 'iso' => 'TC',
@@ -3300,14 +3301,14 @@ class PostcodeCountryTableSeeder extends Seeder
                 'currency_name' => 'Dollar',
                 'phone' => '+1-649',
                 'postalcode_format' => 'TKCA 1ZZ',
-            'postalcode_regex' => '^(TKCA 1ZZ)$',
+                'postalcode_regex' => '^(TKCA 1ZZ)$',
                 'languages' => 'en-TC',
                 'geonameid' => '3576916',
                 'neighbours' => '',
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            137 => 
+            137 =>
             array (
                 'id' => 138,
                 'iso' => 'TD',
@@ -3315,16 +3316,7 @@ class PostcodeCountryTableSeeder extends Seeder
                 'iso_numeric' => '148',
                 'fips' => 'CD',
                 'country' => 'Chad',
-                'capital' => 'N\'Djamena	1284000	15477751	AF	.td	XAF	Franc	235			fr-TD,ar-TD,sre	2434508	NE,LY,CF,SD,CM,NG	
-TF	ATF	260	FS	French Southern Territories	Port-aux-Francais	7829	140	AN	.tf	EUR	Euro				fr	1546748		
-TG	TGO	768	TO	Togo	Lome	56785	7889094	AF	.tg	XOF	Franc	228			fr-TG,ee,hna,kbp,dag,ha	2363686	BJ,GH,BF	
-TH	THA	764	TH	Thailand	Bangkok	514000	69428524	AS	.th	THB	Baht	66	#####	^(d{5})$	th,en	1605651	LA,MM,KH,MY	
-TJ	TJK	762	TI	Tajikistan	Dushanbe	143100	9100837	AS	.tj	TJS	Somoni	992	######	^(d{6})$	tg,ru	1220409	CN,AF,KG,UZ	
-TK	TKL	772	TL	Tokelau		10	1466	OC	.tk	NZD	Dollar	690			tkl,en-TK	4031074		
-TL	TLS	626	TT	Timor Leste	Dili	15007	1267972	OC	.tl	USD	Dollar	670			tet,pt-TL,id,en	1966436	ID	
-TM	TKM	795	TX	Turkmenistan	Ashgabat	488100	5850908	AS	.tm	TMT	Manat	993	######	^(d{6})$	tk,ru,uz	1218197	AF,IR,UZ,KZ	
-TN	TUN	788	TS	Tunisia	Tunis	163610	11565204	AF	.tn	TND	Dinar	216	####	^(d{4})$	ar-TN,fr	2464461	DZ,LY	
-TO	TON	776	TN	Tonga	Nuku\'alofa',
+                'capital' => 'Djamena',
                 'area' => 748,
                 'population' => 103197,
                 'continent' => 'OC',
@@ -3341,7 +3333,7 @@ TO	TON	776	TN	Tonga	Nuku\'alofa',
                 'updated_at' => NULL,
             ),
         ));
-        
-        
+
+
     }
 }

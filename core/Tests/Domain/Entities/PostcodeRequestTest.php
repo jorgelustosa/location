@@ -38,6 +38,14 @@ class PostcodeRequestTest extends TestCase
         $payload['code'] = '';
         $data[] = [$payload, 'Postcode request may not be null'];
 
+        $payload = PayloadDataProvider::data();
+        $payload['country'] = 'XXX';
+        $data[] = [$payload, 'Size of Country parameter is bigger than allowed'];
+
+        $payload = PayloadDataProvider::data();
+        $payload['country'] = 'XX';
+        $data[] = [$payload, 'The Country informed does not exist'];
+
         return $data;
     }
 }

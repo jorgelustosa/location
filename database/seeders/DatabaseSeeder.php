@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call('UsersTableSeeder');
-        $this->call(PostcodeCountryTableSeeder::class);
+        $this->call(CountryTableSeeder::class);
         $this->call(PostcodeTableSeeder::class);
     }
 }
