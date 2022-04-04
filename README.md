@@ -8,17 +8,17 @@
 
 Info
 ----
-Sometime your transactional logistics or geo applications need consume coordinates, geocodes, address, countries 
-or all other kind of geo information to use in workloads or business intelligence panels without 
-of necessity an external api  with flexible methods to retrieve full dataset of information or internal codifications from your own domain. 
-Furthermore, many high availability projects need to have important services or api's inside your own infrastructure to minimize risk of unavailable service.   
-The main purpose is, create a reliable and flexible api to provides localization information to use in 
-futures geocoding capabilities of any software. Some operations from this API can be 
-attached directly to DataAnalytics tools like Microsoft PowerBI and Tableau or Google DataStudio.   
+Sometimes your transactional logistics or geo applications need to consume coordinates, geocodes, addresses, countries
+or all other kinds of geo information to use in workloads or business intelligence panels without dependence on an external API, also with flexible methods to retrieve a full dataset of information or internal codifications from your own domain.
+
+Furthermore, many high availability projects need to have important services or APIs inside your own infrastructure to minimize the risk of unavailable services.   
+
+The main purpose of this project is to create a reliable and flexible API to provide localization information to use in future geocoding capabilities of any software. Some operations from this API can be
+attached directly to DataAnalytics tools like Microsoft PowerBI and Tableau or Google DataStudio.
 
 Instructions 
 ----
-First you have to put your docker container to work properly. Run the follow instructions like described: 
+First of all,  you have to put your docker container to work properly. Run the following instructions as described:
 
 **Start and Build an image of the container:**
 ```
@@ -48,8 +48,8 @@ To access the documentation page, when your container is working, just follow th
 
 
 > ### ⚠️ Tips
-> * When you start your container for the first time, you have to 
-> wait a composer finish the package installation, before use and run commands 
+> * When you start your container for the first time, you have to
+> wait a composer to finish the package installation, before using and run commands
 > in your container. When the initialization is complete you will see the follow 
 > message in supervisor logs or docker-composer verbose return: <br><br>
 >NOTICE: fpm is running, pid 1  <br> NOTICE: ready to handle connections
